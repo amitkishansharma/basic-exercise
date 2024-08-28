@@ -7,7 +7,7 @@ jobs:
       - name: output Event Data
         run: echo "${{ toJSON(github.event) }}"
       - name: output action Data
-        run: echo "${{ toJSON(github.action) }}"
+        run: echo "${{ toJSON(github.event_name) }}"
       - name: Get Code
         uses: actions/checkout@v3
       - name: Install dependencies
